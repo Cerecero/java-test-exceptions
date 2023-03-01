@@ -8,7 +8,7 @@ package com.mycompany.java.pila.ejecuccion;
  *
  * @author alejandro
  */
-public class MyException extends RuntimeException {
+public class MyException extends Exception {
     public MyException() {
         super();
     }
