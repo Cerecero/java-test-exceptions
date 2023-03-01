@@ -28,14 +28,15 @@ public class Flujo {
                 System.out.println(i);
 
                 try {//Intenta esto
-                    int num = 0;
-                    int resultado = i/num;
-                    System.out.println(resultado);
+                    //int num = 0;
+                    //int resultado = i/num;
+                    //System.out.println(resultado);
+                    String test = null;
+                    System.out.println(test.toString());
 
-                } catch (ArithmeticException exception) { //Atrapa el error
+                } catch (ArithmeticException | NullPointerException exception) { //Atrapa el error
                     System.out.println(exception.getMessage());
                     exception.printStackTrace();
-
                 }
 
             }
