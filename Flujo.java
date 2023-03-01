@@ -18,14 +18,18 @@ public class Flujo {
 
         private static void metodo1() {
             System.out.println("Inicio del metodo1");
+            try {
             metodo2();
+            } catch (MyException me) {
+                me.printStackTrace();
+            }
             System.out.println("Fin del metodo1");
         }
 
         private static void metodo2() {
             System.out.println("Inicio del metodo2");
 
-            throw new ArithmeticException();
+            throw new MyException("My exception fue lanzada");
             //System.out.println("Fin del metodo2");
         }
 
