@@ -26,6 +26,18 @@ public class Flujo {
             System.out.println("Inicio del metodo2");
             for(int i = 1; i <= 5; i++) {
                 System.out.println(i);
+
+                try {//Intenta esto
+                    int num = 0;
+                    int resultado = i/num;
+                    System.out.println(resultado);
+
+                } catch (ArithmeticException exception) { //Atrapa el error
+                    System.out.println(exception.getMessage());
+                    exception.printStackTrace();
+
+                }
+
             }
             System.out.println("Fin del metodo2");
         }
